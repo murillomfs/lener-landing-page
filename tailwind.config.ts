@@ -8,10 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        'smartphone': {'min': '300px', 'max': '640px'},
+        'tablet': {'min': '641px', 'max': '992px'},
+        'monitor': {'min': '993px', 'max': '1480px'},
+        'header-space': {'min': '1220px', 'max': '1479px'},
+        'high-monitor': {'min': '1482px', 'max': '1650px'},
+        'showcase': {'min': '1651px', 'max': '1919px'},
+        'desktop': '1920px',
+
+        'smartphone-height': {'raw': '(min-height: 300px) and (max-height: 640px)'},
       },
     },
   },
